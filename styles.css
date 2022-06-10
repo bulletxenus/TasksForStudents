@@ -42,7 +42,7 @@ body {
 
     transform: translateX(0%);
 
-    transition: all 1s;
+    transition: transform 1s;
 }
 
 .slider_item {
@@ -81,5 +81,8 @@ body {
 }
 
 .chosen_control {
-    background: blue;
+    background: black;
+    border-color: gray;
+
+    transition: all 1s;
 }
