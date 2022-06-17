@@ -54,7 +54,9 @@ body {
     align-items: center;
     border-radius: 10px;
     background: black;
-    color: white
+    color: white;
+
+    cursor: pointer;
 }
 
 .slider_controls {
