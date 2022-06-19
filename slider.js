@@ -20,15 +20,26 @@ secondControl.addEventListener("click" , () => {
     firstControl.classList.remove(CHOSEN_CLASS);
     thirdControl.classList.remove(CHOSEN_CLASS);
     secondControl.classList.add(CHOSEN_CLASS);
-    
+
     });
 
 
-    thirdControl.addEventListener("click" , () => {
-        sliderContainer.style.transform ="translateX(-40%)";
-        secondControl.classList.remove(CHOSEN_CLASS);
-        firstControl.classList.remove(CHOSEN_CLASS);
-        thirdControl.classList.add(CHOSEN_CLASS);
-        
-        });    
+thirdControl.addEventListener("click" , () => {
+    sliderContainer.style.transform ="translateX(-40%)";
+    secondControl.classList.remove(CHOSEN_CLASS);
+    firstControl.classList.remove(CHOSEN_CLASS);
+    thirdControl.classList.add(CHOSEN_CLASS);
+
+});
+
+
+const burger = document.querySelector('.burger')
+const menu = document.querySelector('.howPlaneDest')
+
+console.log(menu)
+
+burger.addEventListener('click', () => {
+    menu.classList.toggle('menu_open')
+    burger.classList.toggle('burger_open')
+})
 

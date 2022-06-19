@@ -8,9 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-   
+
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     position: relative;
 }
 header {
@@ -26,50 +26,60 @@ header {
    -webkit-box-shadow: 0px 3px 5px 0px #012c33;
    box-shadow: 0px 3px 5px 0px #012c33;
     color: white;
+
+    padding: 26px 120px 34px;
 }
 
 
 .headerWraper {
     display: flex;
     justify-content: space-between;
-    margin: 25px 117px 34px 120px;
     width: 100%;
     align-items: center;
-
 }
+
 .img1 {
     display: flex;
     gap: 6px;
     margin-top: 6px;
     letter-spacing: 0.3px;
-   
+
     }
 
 .img1 img {
     width: 30px;
     height: 30px;
-    
+
 }
 
-h1 { 
+h1 {
     font-family: "Magra", sans-serif;
     font-size: 31px;
     font-weight: 600;
-   
+
 }
 
 .headerMenu {
     display: flex;
-    
+
     list-style-type: none;
-    
+
     justify-content: space-between;
-  
+
     width: 527px;
     height: 21px;
     font-family: "Red hat text";
     margin-top: 9px;
     margin-right: 8px;
+}
+
+.menu_account,
+.menu_social {
+    display: none;
+}
+
+.burger {
+    display: none;
 }
 
 .login {
@@ -102,12 +112,12 @@ a {
 
 
 .prewiew {
-    
+
     height: 765px;
-    
+
     display: flex;
-    
-    
+
+
     background-image: url(./assets/first_page.jpg);
     background-size: contain;
     color: white;
@@ -122,11 +132,11 @@ a {
     margin-top: 122px;
     margin-left: 120px;
 
-}    
+}
 .explore {
     display: flex;
     width: 100%;
-        
+
     }
 
 .explore h2 {
@@ -143,9 +153,9 @@ a {
     font-weight: 400;
     font-size: 20px;
     font-style: italic;
-    
+
     margin-top: 33.3px;
-    
+
 }
 
 .pannel {
@@ -207,7 +217,7 @@ a {
      align-items: center;
      width: 1440px;
      height: 200px;
-     
+
  }
 
  .path {
@@ -215,7 +225,7 @@ a {
      justify-content: center;
      width: 100%;
      height: 150px ;
-     
+
      color: #F2785C;
      font-family: "Red Hat Text", sans-serif;
      font-variant: normal;
@@ -228,7 +238,7 @@ a {
  .icons {
      display: flex;
      flex-direction: column;
-    
+
 
 
  }
@@ -236,14 +246,14 @@ a {
  .write {
      display: flex;
      flex-direction: row;
-     
+
      font-family: "Aleo" sans-serif;
      font-weight: 400;
      font-size: 22px;
      width: 1440px;
      height: min-content;
      margin-top: 30px;
-     
+
 
  }
 
@@ -251,7 +261,7 @@ a {
      display: flex;
      flex-direction: row;
      width: 1440px;
-          
+
  }
 
  .block1 ,
@@ -268,27 +278,27 @@ a {
      align-items: center;
      cursor: pointer;
      transition: all 150ms ease-in-out;
-   
+
  }
- 
- 
+
+
  .block1:hover,
  .block1:focus   {
      color: #f5a795;
      box-shadow: 0 0 10px 0 rgb(243, 208, 208) inset, 0 0 10px 4px rgb(226, 207, 168);
- } 
+ }
 
  .block2:hover,
  .block2:focus   {
     color: #f5a795;
     box-shadow: 0 0 10px 0 rgb(228, 200, 200) inset, 0 0 10px 4px rgb(226, 207, 168);
-} 
+}
 
 .block3:hover,
 .block3:focus   {
     color: #f5a795;
     box-shadow: 0 0 10px 0 rgb(231, 192, 192) inset, 0 0 10px 4px rgb(226, 207, 168);
-} 
+}
 
 
 
@@ -296,13 +306,13 @@ a {
      width: 52px;
      height: 46px;
      border: 1px solid #F2785C;
-    background-color: #F2785C;} 
-    
+    background-color: #F2785C;}
+
   .aero,
   .calendar,
   .velo_bike  {
      display: flex;
-     
+
  }
 
  .calend {
@@ -313,19 +323,19 @@ a {
      }
 
  .fly {
-     
+
      width: 63px;
      height: 46px;
      border: 1px solid #F2785C;
      background-color: #F2785C;
-     
+
  }
 
  .block1 {
     margin-left: 223px;
     margin-top: 40px;
 }
- 
+
 
 
  .block2 {
@@ -359,7 +369,7 @@ margin-left: 176px;
 margin-top: -3px;
 
  }
- 
+
 .pop {
     display: flex;
     font-family: "Red Hat Text" , sans-serif;
@@ -367,8 +377,8 @@ margin-top: -3px;
     font-size: 40px;
     color: #F2785C;
     margin-top: 225px;
-    
-}  
+
+}
 
 .destination {
     margin: 0 auto;
@@ -377,7 +387,7 @@ margin-top: -3px;
     justify-content: center;
     align-items: center;
 
-  
+
 }
 
 .container_2 {
@@ -396,7 +406,7 @@ margin-top: -3px;
     height:800px;
     background: white;
     overflow: hidden;
-  
+
 }
 
 .slides_container  {
@@ -408,7 +418,7 @@ margin-top: -3px;
     align-items: center;
     transform: translateX(0%);
     transition: transform 1s;
-   
+
 }
 
 
@@ -420,18 +430,18 @@ margin-top: -3px;
     width: 800px;
     height: 800px;
     display: flex;
-    
+
     border-radius: 12px;
     font-family: "Red Hat Text";
     font-size: 32px;
     font-weight: 500;
     color: white;}
-    
+
 
 
 .slider_item_1   {
     background-image:url(./assets/full_see.jpg);
-    
+
 }
 
 
@@ -464,10 +474,10 @@ margin-top: -3px;
     width: 1440px;
     height: 20px;
     justify-content: center;
-    margin-top: -36px; 
+    margin-top: -36px;
     gap: 10px;
-    
-    
+
+
 }
 
 
@@ -482,7 +492,7 @@ margin-top: -3px;
     border-radius: 11px;
     background-color: #f5a795;
     cursor: pointer;
-} 
+}
 
 
 .chosen_control {
@@ -505,7 +515,7 @@ margin-top: -3px;
     border: 1px solid #0D606F;
     border-radius: 8px;
     background-color: #0D606F;
-    margin-top: 15px; 
+    margin-top: 15px;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -539,12 +549,12 @@ margin-top: -3px;
     flex-direction: column;
     position: relative;
    height: 1334px;
-    
+
     background-image: url(./assets/lake.jpg);
     background-repeat: no-repeat;
     z-index: 1;
-    
-   
+
+
 }
 
 .content_container {
@@ -552,22 +562,22 @@ margin-top: -3px;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.626);
     align-items: center;
-    
+
     gap: 30px;
     padding: 41px 125px 0 120px ;
-    height: 1271px; 
-    
+    height: 1271px;
+
 }
 
 .travel_stories {
     width: 1445px;
-    
+
     display: flex;
     position: relative;
-    flex-direction: column;    
-   
+    flex-direction: column;
+
     margin-top: 39px;
-   
+
 }
 
 .Thailand,
@@ -588,8 +598,8 @@ margin-top: -3px;
     flex-direction: column;
     width: 760px;
     height: 250px;
-    
-    
+
+
 }
 
 .title_Thai,
@@ -626,7 +636,7 @@ margin-top: -3px;
 .foto_Thai,
 .foto_parc,
 .foto_mountains,
-.foto_road 
+.foto_road
 {
     width: 408px;
     height: 258px;
@@ -649,7 +659,7 @@ margin-top: -3px;
     background-color: #0D606F;
     margin-top: 11px;
     margin-left: 5px;
- 
+
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -665,7 +675,7 @@ margin-top: -3px;
 
   .arrow_1 {
       margin-left: -6px;
-  } 
+  }
 
 
 
@@ -690,14 +700,14 @@ z-index: 3;
       color: white;
       margin-left: 590px;
       margin-top: -63px;
-    
+
   }
 
   .twitter {
     margin-left: 30px;
     margin-top: -62px;
   }
-    
+
 
   .youtube {
       display: flex;
@@ -712,3 +722,115 @@ z-index: 3;
       margin-left: 331px;
       margin-top: -61px;
   }
+
+@media screen and (max-width: 1140px) {
+    header {
+        padding: 25px 10px 34px 10px;
+    }
+
+    .headerMenu {
+        width: auto;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .img1 {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background: transparent;
+        box-shadow: none;
+        border: none;
+
+        padding: 45px 24px 0 16px;
+        align-items: center;
+    }
+
+    .img1 h1 {
+        visibility: hidden;
+    }
+
+    .howPlaneDest {
+        position: absolute;
+        right: -180px;
+        top: 0;
+
+        width: 165px;
+        height: 250px;
+
+        background: #F2785C;
+
+        margin: 0;
+        padding: 44px 15px 30px 0px;
+
+        transition: right 1s;
+    }
+
+    .headerMenu {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .menu_social,
+    .menu_account {
+        display: block;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background: #FFFFFF;
+        position: relative;
+
+        transition: all 1s;
+    }
+
+    .burger:before,
+    .burger:after {
+        position: absolute;
+        content: '';
+        width: 26px;
+        height: 2px;
+        background: #FFFFFF;
+
+        transition: all 1s;
+    }
+
+    .burger:before {
+        top: -6px
+    }
+
+    .burger:after {
+        top: 6px
+    }
+
+    .burger_open {
+        transform: translate(-95px, -40px);
+        background: transparent;
+        transition: all 1s;
+    }
+
+    .burger_open:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .burger_open:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+
+    .menu_open {
+        right: 0;
+    }
+}
