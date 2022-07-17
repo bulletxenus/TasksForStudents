@@ -1,0 +1,92 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator_container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(68,11,101,1) 53%, rgba(102,1,255,1) 100%);
+    padding: 10px 2px 2px;
+
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+}
+
+.display_operator {
+    min-width: 20px;
+    flex-basis: 10%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.display_calculating {
+    flex-basis: 90%;
+    flex-grow: 4;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.display_calculating::placeholder {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.buttons_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, auto));
+    grid-template-rows: repeat(5, minmax(50px, auto));
+    grid-gap: 2px;
+}
+
+.btn {
+   border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+.equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+
+
