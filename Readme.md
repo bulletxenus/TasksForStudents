@@ -23,6 +23,7 @@
 - Demo: https://bulletxenus.github.io/TasksForStudents/calculator/
 
 Чтобы склонировать проект выполните команду: 
+
 `git clone https://github.com/bulletxenus/TasksForStudents.git -b calculatro`
 
 Стоит отметить, что в двух примерах реализованы базовые калькуляторы, но в требованиях будет задание расширить их функционал. Что придется сделать самостоятельно.=)
